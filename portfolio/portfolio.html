@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — Sriya Ellapu</title>
+    <meta name="description"
+        content="Sriya Ellapu — B.Tech Civil | Web Dev Intern | Strategy & Growth | GenAI Enthusiast" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <style>
+        :root {
+            --bg: #0f1724;
+            --card: #0b1220;
+            --muted: #a0b0c0;
+            --accent: #5720d7;
+            --accent-light: #270785;
+            --glass: rgba(255, 255, 255, 0.06);
+            --gap: clamp(14px, 2.5vw, 32px);
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            color-scheme: dark;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            background: #223048;
+            color: #ffffff;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px;
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        p.lead {
+            margin: 6px 0 0;
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: var(--gap);
+            margin-top: 36px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 6px 36px rgba(2, 6, 23, 0.85);
+        }
+
+        .sidebar .section {
+            margin-bottom: 24px;
+        }
+
+        .section h3 {
+            margin: 0 0 16px;
+            font-size: 14px;
+            color: white;
+            letter-spacing: 0.7px;
+            text-transform: uppercase;
+        }
+
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .skill {
+            display: inline-block;
+            background: var(--glass);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .meta {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.4;
+        }
+
+        .content h2 {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        .projects {
+            display: grid;
+            gap: 20px;
+        }
+
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            align-items: flex-start;
+        }
+
+        .project .thumb {
+            width: 120px;
+            height: 90px;
+            border-radius: 12px;
+            flex: 0 0 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--muted);
+            font-weight: 600;
+            overflow: hidden;
+        }
+
+        .project .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 14px;
+            border-radius: 12px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-light));
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 48px;
+            color: var(--muted);
+            font-size: 13px;
+            text-align: center;
+        }
+
+        @media(max-width:1000px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            .avatar {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <div class="avatar"><img src="me in north trip.png" alt="Profile Picture" /></div>
+                <div>
+                    <h1>Sriya Ellapu — Strategy & Growth | Web Dev | GenAI</h1>
+                    <p class="lead">B.Tech Civil (Pre-final Year) • Web Developer Intern • Passionate about
+                        web-development, analytics, and growth experiments</p>
+                </div>
+            </div>
+            <div style="text-align:right; min-width:180px;">
+                <div class="meta">Pre-final year — B.Tech Civil</div>
+                <div style="margin-top:12px"><a href="#contact" class="btn">Contact</a></div>
+            </div>
+        </header>
+
+        <main>
+            <aside class="sidebar">
+                <div class="card sidebar">
+                    <div class="section">
+                        <h3>About me</h3>
+                        <p class="meta">I am a curious, detail-oriented developer with strong programming skills,
+                            experience in analytics and affiliate marketing, and knowledge of GenAI. I build interactive
+                            apps, analyze data, and experiment with growth strategies.</p>
+                    </div>
+
+                    <div class="section">
+                        <h3>Skills & Tools</h3>
+                        <div class="chips">
+                            <span class="skill">HTML</span>
+                            <span class="skill">CSS</span>
+                            <span class="skill">JavaScript</span>
+                            <span class="skill">React</span>
+                            <span class="skill">Python</span>
+                            <span class="skill">Flask</span>
+                            <span class="skill">SQL / SQLite</span>
+                            <span class="skill">GenAI </span>
+                            <span class="skill">Data Analysis</span>
+                            <span class="skill">Pandas</span>
+                            <span class="skill">UI/UX Design</span>
+                            <span class="skill">Affiliate Marketing</span>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h3>Education</h3>
+                        <div class="meta">B.Tech — Civil Engineering (Pre-final year)</div>
+                    </div>
+
+                    <div class="section">
+                        <h3>Contact</h3>
+                        <div class="meta">Email: <a class="link"
+                                href="mailto:sriyaellapu04@gmail.com">sriyaellapu04@gmail.com</a></div>
+                        <div class="meta">GitHub: <a class="link"
+                                href="https://github.com/honeyy-exe">github.com/honeyy-exe</a></div>
+                        <div class="meta">LinkedIn: <a class="link"
+                                href="https://www.linkedin.com/in/sriya-ellapu/">linkedin.com/sriya-ellapu</a></div>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="content">
+                <div class="card">
+                    <h2>Experience & Projects</h2>
+                    <div class="projects">
+                        <article class="project">
+                            <div class="thumb"><img src="kiht.png" alt="KIHT Internship"></div>
+                            <div>
+                                <div style="display:flex; justify-content:space-between; align-items:center;">
+                                    <div style="font-weight:700">Internship at KIHT</div>
+                                    <a class="btn" href="https://kiht.in/">Details</a>
+                                </div>
+                                <div class="meta">Learned React, Flask, SQL, and contributed to front-end projects with
+                                    real-world applications.</div>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <div class="thumb"><img src="hhi.png" alt="Family Business"></div>
+                            <div>
+                                <div style="display:flex; justify-content:space-between; align-items:center;">
+                                    <div style="font-weight:700">Family Business — Affiliate Marketing</div>
+                                    <a class="btn" href="https://www.instagram.com/officialhappyhealthindia/">Details</a>
+                                </div>
+                                <div class="meta">Handled affiliate marketing campaigns and analytics to drive business
+                                    growth.</div>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <div class="thumb"><img src="social....analysis.png"
+                                    alt="Social Media Campaign Analysis"></div>
+                            <div>
+                                <div style="display:flex; justify-content:space-between; align-items:center;">
+                                    <div style="font-weight:700">Social Media Campaign Analysis</div>
+                                    <a class="btn" href="https://github.com/honeyy-exe/Social-Media-Campaign-Analysis">View</a>
+                                </div>
+                                <div class="meta">Analyzed social media campaigns to calculate engagement rates,
+                                    identify top-performing posts, and generate actionable growth insights. Visualized
+                                    trends over time using Python, Pandas, and Matplotlib.</div>
+                            </div>
+                        </article>
+
+
+                        <article class="project">
+                            <div class="thumb"><img src="emoengine.png" alt="Emotion Engine"></div>
+                            <div>
+                                <div style="display:flex; justify-content:space-between; align-items:center;">
+                                    <div style="font-weight:700">Emotion Engine (Data Analysis)</div>
+                                    <a class="btn" href="https://github.com/honeyy-exe/EmotionEngine">View</a>
+                                </div>
+                                <div class="meta">Analyzed datasets using Pandas to predict emotions. Built
+                                    visualizations and performed exploratory data analysis.</div>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <div class="thumb"><img src="amazon-price-tracker.png" alt="Amazon Price Tracker"></div>
+                            <div>
+                                <div style="display:flex; justify-content:space-between; align-items:center;">
+                                    <div style="font-weight:700">Amazon Price Tracker</div>
+                                    <a class="btn" href="https://github.com/honeyy-exe/Amazon-Price-Tracker">View</a>
+                                </div>
+                                <div class="meta">Built a price tracker using BeautifulSoup, tracked product prices, and
+                                    implemented alerts for price drops.</div>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <div class="thumb"><img src="100movies.png" alt="100 Movies to Watch"></div>
+                            <div>
+                                <div style="display:flex; justify-content:space-between; align-items:center;">
+                                    <div style="font-weight:700">100 Movies to Watch (BeautifulSoup)</div>
+                                    <a class="btn" href="https://github.com/honeyy-exe/100-movies-to-watch-.py">View</a>
+                                </div>
+                                <div class="meta">Scraped and displayed 100 movies with BeautifulSoup. Practiced web
+                                    scraping, data extraction, and presentation in Python.</div>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <div class="thumb"><img src="snakegame.png" alt="Snake Game"></div>
+                            <div>
+                                <div style="display:flex; justify-content:space-between; align-items:center;">
+                                    <div style="font-weight:700">Snake Game (Python Turtle)</div>
+                                    <a class="btn" href="https://github.com/honeyy-exe/Snake_game">View</a>
+                                </div>
+                                <div class="meta">Built a classic Snake Game using Python Turtle, implementing smooth
+                                    game logic, interactive controls, collision detection, scoring system, and a
+                                    user-friendly interface.</div>
+                            </div>
+                        </article>
+
+
+                        <article class="project">
+                            <div class="thumb"><img src="kanye.png" alt="Kanye Quotes"></div>
+                            <div>
+                                <div style="display:flex; justify-content:space-between; align-items:center;">
+                                    <div style="font-weight:700">Kanye Quotes Game (Tkinter)</div>
+                                    <a class="btn" href="https://github.com/honeyy-exe/kanye-quotes-app">View</a>
+                                </div>
+                                <div class="meta">Built interactive desktop quotes game using Tkinter, focused on GUI
+                                    elements and user interaction.</div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div style="height:24px"></div>
+
+                <div class="card">
+                    <h2>Work Philosophy</h2>
+                    <p class="meta">I approach every project with precision, dedication, and a focus on measurable impact. I craft efficient, maintainable code, design intuitive interfaces, and leverage data-driven insights to drive growth and meaningful results.</p>
+                </div>
+
+                <div style="height:24px"></div>
+
+                <div class="card" id="contact">
+                    <h2>Contact</h2>
+                    <p class="meta">Email: <a class="link"
+                            href="mailto:sriyaellapu04@gmail.com ">sriyaellapu04@gmail.com</a><br>
+                        LinkedIn: <a class="link"
+                            href="https://www.linkedin.com/in/sriya-ellapu/">linkedin.com/in/your-linkedin</a><br>
+                        GitHub: <a class="link" href="https://github.com/honeyy-exe">github.com/honeyy-exe</a></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Sriya Ellapu. Built with passion, precision, and vibrant front-end design.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
